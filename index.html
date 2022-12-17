@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>PageAdmin NIHHH</title>
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="#" aria-label="Product">
+    <img src="data:image/jpeg;base64,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" alt="" width="80">
+    <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">About</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Contact</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
+  </nav>
+</header>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Punny headline</h1>
+      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Cool stuff</a></li>
+        <li><a class="link-secondary" href="#">Random feature</a></li>
+        <li><a class="link-secondary" href="#">Team feature</a></li>
+        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+        <li><a class="link-secondary" href="#">Another one</a></li>
+        <li><a class="link-secondary" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Resource name</a></li>
+        <li><a class="link-secondary" href="#">Resource</a></li>
+        <li><a class="link-secondary" href="#">Another resource</a></li>
+        <li><a class="link-secondary" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Business</a></li>
+        <li><a class="link-secondary" href="#">Education</a></li>
+        <li><a class="link-secondary" href="#">Government</a></li>
+        <li><a class="link-secondary" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Team</a></li>
+        <li><a class="link-secondary" href="#">Locations</a></li>
+        <li><a class="link-secondary" href="#">Privacy</a></li>
+        <li><a class="link-secondary" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
